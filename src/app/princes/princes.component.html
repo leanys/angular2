@@ -1,0 +1,11 @@
+<h2>The Options:</h2>
+
+
+<ul class="prince">
+  <li *ngFor="let prince of princes">
+    <a routerLink="/details/{{prince.id}}">
+      <span class="badge">{{prince.id}}</span>
+      <label>{{prince.name}}</label>
+    </a>
+  </li>
+</ul>
